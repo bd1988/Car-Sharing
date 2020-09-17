@@ -177,23 +177,23 @@ main {
     flex-direction: column;
 }
 
-.blog {
+.blog, .service, .contact {
     display: flex;
     background-color: white;
     padding: 100px 0;
 }
 
-.blog > .container {
+.blog > .container, .service > .container {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: center;    
 }
 
 .section-header {
     text-align: center;
 }
 
-.h2-blog {
+.h2-heading {
     color: black;
     font-size: 47px;
     font-weight: bold;
@@ -201,7 +201,7 @@ main {
     display: inline-block;    
 }
 
-.h2-blog::before {
+.h2-heading::before {
     content: '';
     display: block;
     width: 50px;
@@ -212,7 +212,7 @@ main {
     left: -65px;
 }
 
-.h2-blog::after {
+.h2-heading::after {
     content: '';
     display: block;
     width: 50px;
@@ -226,6 +226,7 @@ main {
 .section-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .post {
@@ -240,14 +241,14 @@ main {
     height: 234px;
 }
 
-.h3-blog {
+.h3 {
     color: var(--grey);
     font-size: 19px;
     font-weight: 300;
     padding-top: 25px;    
 }
 
-.blog-content {
+.post-content {
     color: var(--grey);
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -266,8 +267,43 @@ main {
 }
 
 .service {
-
+    display: flex;
+    background-color: var(--dark-grey);
 }
+
+.service .h2-heading {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.service .h3 {
+    color: white;
+}
+
+.service .post {
+    width: 240px;
+    align-items: center;
+    padding: 20px 20px 0;
+}
+
+.service .post-content {
+    color: var(--light-grey);
+}
+
+.service-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.service .h3 {
+    text-align: center;
+}
+
+.service .post-content {
+    text-align: center;
+}
+
 
 .contact {
 
