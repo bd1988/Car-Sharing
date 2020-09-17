@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
 }
 
 body {    
@@ -124,6 +124,7 @@ h1 {
     font-weight: 800;
     word-spacing: 8px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .header-description {
@@ -131,6 +132,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 44px;
+    color: white;
 }
 
 .share-a-car, .key-features {
@@ -145,6 +147,7 @@ h1 {
 .share-a-car {
     background-color: var(--red);
     margin-right: 12.5px;
+    color: white;
 }
 
 .key-features {
@@ -264,6 +267,7 @@ main {
     width: 142px;
     height: 40px;
     font: 300 14px 'Nunito Sans', sans-serif;
+    color: white;
 }
 
 .service {
@@ -304,10 +308,108 @@ main {
     text-align: center;
 }
 
-
-.contact {
-
+.contact .section-content {
+    justify-content: center;
 }
+
+.contact-img {
+    width: 444px;
+    height: 316px;
+    margin: 35px 15px 0 0;
+}
+
+.contact-img img {
+    margin: 0;
+}
+
+.form {
+    width: 444px;    
+    margin: 35px 0 0 0;
+}
+
+::placeholder {
+    padding: 0 0 0 15px;
+    font-size: 12px;
+  }
+
+input {
+    width: 98%;
+    height: 38px;
+    margin-bottom: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+input:active {
+    border: 1px dashed gray;
+}
+
+input:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+textarea:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+.checkbox-checkbox {    
+    width: 22px;
+    height: 22px;
+    margin: 0;  
+    float: left;
+    display: block;
+    margin: 10px 10px 60px 0;
+    border-radius: 8px;
+    appearance: none;     
+}
+
+.checkbox-checkbox:checked {    
+    content: url(../images/Icon\ Check.svg);     
+}
+
+.checkbox-checkbox:focus {
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.label-wrapper {
+    display: block;    
+}
+
+.checkbox-label {
+    color: var(--light-grey);
+    font-size: 10px;
+    display: block;
+    line-height: 12px;              
+}
+
+.form-button {
+    display: block;
+    margin: 20px 0 0 auto;
+    clear: both;
+    width: 142px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--red);
+}
+
 
 footer {
 
